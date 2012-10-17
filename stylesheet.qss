@@ -1,0 +1,87 @@
+QMainWindow
+{
+    color: #fff;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #434A5D, stop: 1 #282C37);
+}
+
+QWidget{
+	color: #fff;
+}
+
+QGroupBox
+{
+	background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #636571, stop: 1 #353743);
+	border: 1px solid #222222;
+	border-radius: 3px;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+QGroupBox::title
+{
+	border: 1px solid #222222;	
+	background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #8D9099, stop: 1 #676975);
+	padding: 2px;	
+	border-bottom-right-radius: 2px;	
+}
+
+QComboBox{
+	background-color: #2d2d2d;		
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 2px;	
+}
+
+QComboBox:on
+{
+    padding-top: 3px;
+    padding-left: 4px;
+    background-color: #2d2d2d;
+}
+
+QComboBox QAbstractItemView
+{
+    border: 0px solid darkgray;
+    background-color: #2d2d2d;
+    selection-background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1587CB, stop: 1 #1065B4);
+}
+
+QPushButton{
+	font-weight: bold;
+	background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1587CC, stop: 1 #1065B3);
+	border: 1px solid #1e1e1e;
+    border-radius: 2px;	
+    border-top: 1px solid #62D5FF;
+    padding: 4px;
+}
+
+QPushButton:hover {
+	background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #739632, stop: 1 #A8D848);
+	border-top: 1px solid #C3FF87;
+	color: #304704;
+}
+
+QPushButton:pressed {
+	background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #81A936, stop: 1 #9FCB42);
+	border-top: 1px solid #333;
+	margin-top: 1px;
+	margin-right: 1px;	
+}
+
+QRadioButton::indicator:checked, QRadioButton::indicator:unchecked{
+    color: #b1b1b1;
+    background-color: #323232;
+    border: 1px solid #1e1e1e;
+    border-radius: 2px;
+}
+
+QRadioButton::indicator:checked
+{
+	background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1587CC, stop: 1 #1065B3);
+}
+
+QLineEdit{
+	background-color: #2d2d2d;
+	border: 1px solid #1e1e1e;
+    border-radius: 2px;		
+}

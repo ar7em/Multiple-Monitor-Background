@@ -6,7 +6,6 @@ Multiple Monitor Background allows you (would you believe it) to set separate wa
 ### To do
 - single wallpaper mode is currently doesn't use information of displays positioning. I'm going to finish this on first demand. Still it's possible to achieve the same result with usual Windows personalization setting.
 - add Linux support
-- make binary `.exe` file (on first demand)
 
 ### Disclaimer
 Display icon kindly provided by Rimshotdesign: http://rimshotdesign.com (see icon/readme.txt for more info)

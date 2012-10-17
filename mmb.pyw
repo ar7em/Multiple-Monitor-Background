@@ -97,7 +97,7 @@ class Window(QtGui.QMainWindow):
                               image.rect().height()))
 
         self.displayOrder = []
-        displayList = ["№{0} ({1}x{2})  ".format(i + 1, width, height)
+        displayList = ["{0} ({1}x{2})  ".format(i + 1, width, height)
                        for i, (width, height)
                        in zip(range(len(self.resolutions)), self.resolutions)]
 
@@ -173,7 +173,7 @@ class Window(QtGui.QMainWindow):
         self.separateWallpapers = []
         displaysLayout.addWidget(openFileLabel, 2, 0)
         for i, screen in zip(range(len(self.resolutions)), self.resolutions):
-            screenLabel = QtGui.QLabel("Screen №{0} ({1}x{2})".format(i + 1,
+            screenLabel = QtGui.QLabel("Screen {0} ({1}x{2})".format(i + 1,
                                                                     screen[0],
                                                                     screen[1]))
             screenImage = QtGui.QLabel()
@@ -209,11 +209,10 @@ class Window(QtGui.QMainWindow):
     def createOpenFileFunction(self, lineEdit):
         '''Open file dialog box'''
         def setOpenFile():
-            options = QtGui.QFileDialog.Options()
             fileName = QtGui.QFileDialog.getOpenFileName(self,
                 "Select background image",
                 lineEdit.text(),
-                "Images (*.jpeg *.jpg *.png *bmp);;All Files (*)", options)
+                "Images (*.jpeg *.jpg *.png *bmp);;All Files (*)")
             if fileName:
                 lineEdit.setText(fileName)
         return setOpenFile
